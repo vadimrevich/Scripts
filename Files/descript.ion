@@ -1,6 +1,3 @@
-all2lwr.bat -- Командный файл для перевода имени файла в нижний регистр
-all2upr.bat -- Командный файл для перевода имени файлов в верхний регистр
-freqdic.exe -- Программа "частотный словарь"
 Account.bat -- Создание/удаление/активация аккаунта Windows.\nUSAGE: Account.bat make|delete|activate account [password]\nВ
 Activate.bat -- Активация Windows и/или Office KMS активатором. Активатор устанавливается отдельно\nUSAGE: Activate.bat win|off|all [KMS Server]\nВ
 AddDHCPScope.bat -- Добавляет диапазон (scope) для DHCP серверов в локальной сети\nUSAGE: AddDHCPScope.bat scope_ip scope_mask scope_nameВ
@@ -50,15 +47,6 @@ CloseAllSharedFiles.bat -- Закрывает все общие файлы\nUSAGE: CloseAllSharedFiles
 ConfigureCore.bat -- Пример конфигурации core Server\nUSAGE: отредактируйте и запустите этот файл\nВ
 ConfigureDHCP.bat -- Пример конфигурации DHCP сервера\nUSAGE: Отредактируйте и запустите этот файл\nВ
 D.bat -- Включение режима отладки\nUSAGE: D.bat command [parameters]В
-WoL.bat -- Включение/выключение/проверка сервиса Wake on Lan на сетевом интерфейсе\nUSAGE: WoL.bat disable|enable|check interface_id\nВ
-WinXPx32SecurityUpdates.bat -- Включение/выключение обновлений безопасности для Windows XP\nUSAGE: WinXPx32SecurityUpdates.bat disable|enable\nВ
-Wait.bat -- Ожидание нажатия любой клавиши (в течение определённого времени)\nUSAGE: Wait.bat [seconds]В
-H.bat -- Справка по командам\nUSAGE: H.bat [command]В
-Halt.bat -- Выключить компьютер\nUSAGE: Halt.bat \nВ
-Hibernate.bat -- Hibernate computer (перевод компьютера в глубокий сон)\nUSAGE: Hibernate.batВ
-Hibernation.bat -- Включение/выключение/проверка Hibernation\nUSAGE: Hibernation.bat disable|enable|check\nВ
-Elevate.bat -- Запуск программы с административными полномочиями\nUSAGE: Elevate.bat [command [parameters]]\nФункция использует внешнюю утилиту nircmd.exe\nВ
-GPO.bat -- Архивация и восстановление всех GPO\nUSAGE: GPO.bat backup|restore [backup_dir]В
 DefragObject.bat -- Дефрагментация одного файла или каталога\nUSAGE: DefragObject.bat file_or_directory\nСкрипт использует внешнюю утилиту contig.exe\nВ
 DeleteDHCPAllScopes.bat -- Удаляет все диапазоны на DHCP сервере\nUSAGE: DeleteDHCPAllScopes.bat\nВ
 DeleteDHCPScope.bat -- Удаляет диапазон (scope) ip адресов с DHCP сервера\nUSAGE: DeleteDHCPScope.bat scope_ip\nВ
@@ -80,6 +68,7 @@ EchoFail.bat -- Выводит произвольное сообщение об ошибке\nUSAGE: EchoFail.bat [m
 EchoSucc.bat -- Выводит произвольное сообщение об успешном завершении\nUSAGE: EchoSucc.bat [message]\nПри выводе функция использует программу hs_color.exe\nВ
 EchoTitl.bat -- Выводит произвольное титульное сообщение\nUSAGE: EchoTitl.bat [message]\nПри выводе функция использует программу hs_color.exe\nВ
 EchoWarn.bat -- Выводит произвольное сообщение предупреждения\nUSAGE: EchoWarn.bat [message]\nПри выводе функция использует программу hs_color.exe\nВ
+Elevate.bat -- Запуск программы с административными полномочиями\nUSAGE: Elevate.bat [command [parameters]]\nФункция использует внешнюю утилиту nircmd.exe\nВ
 EnableConnectToServer.bat -- Возможность подключиться к Core Server с консоли \nUSAGE: EnableConnectToServer.bat server_name [host_or_domain\\user [password]]\nФункция использует внешний модуль cmdkey.exe\n\nЕсли вы хотите управлять Server Core без использования доменной аутентификации, для использования альтернативных учётных данных при подключении к управляемому компьютеру выполните следующую команду на управляющем компьютере:\n\n::   cmdkey /add:server.argon.com.ru /user:server\\admin /pass:argonforever\n\nЭто здорово облегчит подключение по WinRM и сделает возможным в принципе управление по MMC.\nВ
 EnableNTPServer.bat -- Включает NTP сервер на компьютере\nUSAGE: EnableNTPServer.bat\nВ
 EnableRegEdit.bat -- Делает возможным запуск regedit.exe\nUSAGE: EnableRegEdit.bat\nВ
@@ -91,6 +80,11 @@ File.bat -- Создаёт/удаляет/проверяет/очищает текстовый файл Windows\nUSAGE: Fil
 Firewall.bat -- Включает/выключает брандмауэр Windows\nUSAGE: Firewall.bat disable|enable\nВ
 Fix0xC0000005.bat -- Исправляет ошибку 0xC0000005 (удаляет обновления, её вызывающие)\nUSAGE: Fix0xC0000005.bat\nВ
 FlushDNS.bat -- Очищает кеш DNS\nUSAGE: FlushDNS.bat\nВ
+GPO.bat -- Архивация и восстановление всех GPO\nUSAGE: GPO.bat backup|restore [backup_dir]В
+H.bat -- Справка по командам\nUSAGE: H.bat [command]В
+Halt.bat -- Выключить компьютер\nUSAGE: Halt.bat \nВ
+Hibernate.bat -- Hibernate computer (перевод компьютера в глубокий сон)\nUSAGE: Hibernate.batВ
+Hibernation.bat -- Включение/выключение/проверка Hibernation\nUSAGE: Hibernation.bat disable|enable|check\nВ
 IEProtectedMode.bat -- Включает/выключает защищённый режим работы Internet Explorer\nUSAGE: IEProtectedMode.bat disable|enable\nВ
 ImportDHCP.bat -- Импорт параметров DHCP сервера из файла  [DHCP.dat]\nUSAGE: ImportDHCP.bat [file_name]\nВ
 ImportProxySettingsFromIE.bat -- Импорт настроек прокси из Internet Explorer\nUSAGE: ImportProxySettingsFromIE.bat\n\nИмпортирование настроек прокси из IE в API WinHttp.\nЭто API используется, например, при обновлениях MSE.\nhttp://pcportal.org.ru/forum/47-304-7В
@@ -109,28 +103,17 @@ NetConf.bat -- Архивация/восстановление конфигурации сети из каталога [C:\\BACKU
 NetPowerManagement.bat -- Включение/выключение управления питанием на всех сетевых интерфейсах\nUSAGE: NetPowerManagement.bat disable|enable\nВ
 NetVisibility.bat -- Включение,выключение видимости компьютера в сетевом окружении\nUSAGE: NetVisibility.bat disable|enableВ
 OEMDriversDel.bat -- Удавление всех OEM драйверов\nUSAGE: OEMDriversDel.bat\nСкрипт использует внешнюю программу pnputil.exe\nВ
-UserProfileSettings.bat -- Установки профиля пользователя\nUSAGE: UserProfileSettings.bat [delete username]\nВ
-USBStorage.bat -- Сохранение/восстановление содержимого USB носителя в файл [C:\\image.imz]\nUSAGE: USBStorage.bat [backup|restore drive [image]]\nСкрипт использует утилиту usbitcmd.exe\nВ
-USBDevOnSoftRemove.bat -- Включение/выключение USB устройства для мягкого удаления (использует реестр)\nUSAGE: USBDevOnSoftRemove.bat disable|enable\nВ
-UnwrapMikroTikExport.bat -- Убирает переносы в файлах экспорта Microtik  [*.export *.rsc]\nUSAGE: UnwrapMikroTikExport.bat [file_names]\nВ
-Thumbs.bat -- Включает/выключает миниатюры (файлов просмотра рисунков и видео)\nUSAGE: Thumbs.bat disable|enable\nВ
-ThumbCache.bat -- Включает/выключает кеш миниатюр\nUSAGE: ThumbCache.bat disable|enable\nВ
-SysInfo.bat -- Выводит информацию о системе\nUSAGE: SysInfo.bat\nВ
 P.bat -- Пинг хоста [8.8.8.8]\nUSAGE: P.bat [host]\nВ
 PathManagement.bat -- Управление системными и пользовательскими путями\nUSAGE: PathManagement.bat show|set|delete|add|normalize system|user [path]\nВ
 PPTP.bat -- Управление PPTP соединениями (с графическим интерфейсом)\nUSAGE: PPTP.bat [delete|add connection_name [server user password [dns-suffix]]]\nВ
+PPTP.hta -- HTML GUI приложение для подключения к PPTP серверу\nВ
 Process.bat -- Удаляет/проверяет процесс [Выдаёт список процессов]\nUSAGE: Process.bat [delete|check process_name]\nСкрипт использует функции taskkill.exe и tasklist.exe\nВ
-Task.bat -- Добавляет/удаляет/проверяет запланированные задачи Windows [Выдаёт список задач]\nUSAGE: Task.bat [delete|add|check task_name [hourly|daily|weekly|onstart task]]\nВ
-TaskBackupDHCP.bat -- Удаление/добавление задачи архивирования параметров DHCP сервера\n\nUSAGE: TaskBackupDHCP.bat delete/add [backup_path]В
-TaskBackupSystemDrive.bat -- Добавление/удаление/Проверка задачи архивации системного диска (на D:)\nUSAGE: TaskBackupSystemDrive.bat delete|add|check [backup_target]\nВ
-TaskMountExchangeDatabases.bat -- Добавление/удаление задачи монтирования баз данных Microsoft Exchange\nUSAGE: TaskMountExchangeDatabases.bat delete/add\nВ
-TestAD.bat -- Тест ActiveDirectory\nUSAGE: TestAD.bat [domain]\nВ
 RDP.bat -- Разрешает/запрещает RDP соединения к данному хосту\nUSAGE: RDP.bat disable|enable\nВ
 Reboot.bat -- Перезагружает компьютер\nUSAGE: Reboot.bat\nВ
 RegisterDNS.bat -- Обновить все DHCP leases и перерегистрировать DNS имена\nUSAGE: RegisterDNS.bat\nВ
+Release.bat -- Отменить DHCP конфигурацию на всех адаптерах\nUSAGE: Release.bat\nВ
 RemoteAccessToPnP.bat -- Включает/выключает удалённый доступ к PnP (RPC) интерфейсу\nUSAGE: RemoteAccessToPnP.bat disable|enable\nВ
 RemoveFromDomain.bat -- Удаляет компьютер из домена\nUSAGE: RemoveFromDomain.bat [account]\nгде account - аккаунт администратора домена\nСкрипт использует встроенную функцию netdom.exe\nВ
-Release.bat -- Отменить DHCP конфигурацию на всех адаптерах\nUSAGE: Release.bat\nВ
 Renew.bat -- Обновить DHCP и статическую конфигурацию на всех адаптерах\nUSAGE: Renew.bat \nСкрипт использует вызов стандартной программы ipconfig.exe\nВ
 RepairDC.bat -- Восстанавливает контроллер домена\nUSAGE: RepairDC.bat\nСкрипт использует вызовы стандартных программ dcdiag.exe и netdiag.exe\nВ
 RepairDisk.bat -- Восстановление диска\nUSAGE: RepairDisk.bat disk\nПрограмма использует встроенную команду chkdsk.exe\nВ
@@ -166,9 +149,6 @@ SetIP.bat -- Установить IP, маску и шлюз на сетевом интерфейсе\nUSAGE: SetIP.bat
 SetKMS.bat -- Устанавливает KMS сервер для Windows и/или  Office\nUSAGE: SetKMS.bat win|off|all [kms_server]\nСкрипт использует вызов нестандартных скриптов ospp.vbs, slmgr.vbs\nВ
 SetLayoutEn.bat -- Устанавливает английскую раскладку клавиатуры по умолчанию\nUSAGE: SetLayoutEn.bat\nСкрипт использует вызов стандартной утилиты reg.exe\nВ
 SetLDAPBindParams.bat -- Задание установок для команды LDAP BIND\nUSAGE: SetLDAPBindParams.bat default|sasl\nСкрипт использует встроенную утилиту netsh.exe\nВ
-ShowKMS.bat -- Показывает статус лицензии KMS для Windows и/или Office\nUSAGE: ShowKMS.bat win|off|all\nСкрипт использует вызов нестандартного скрипта slmgr.vbs\nВ
-PPTP.hta -- HTML GUI приложение для подключения к PPTP серверу\nВ
-Suspend.bat -- Перевести компьютер в режим сна\nUSAGE: Suspend.bat\nСкрипт использует вызов стандартной програмы rundll.exe\nВ
 SetMenuParams.bat -- Установить параметры меню Windows Explorer\nUSAGE: SetMenuParams.bat\nСкрипт использует вызов стандартной утилиты reg.exe\n\nСкрипт использует следующие установки (твики):\n\n  :: Раскрывать "Сетевые подключения" при использовании классического меню (для Windows XP)\n  :: Не использовать сокращённое меню (для Windows XP)\n  :: Не показывать пункт "Помощь" в меню (не для классического меню)\n  :: Включить классическое меню\n  :: Разрешить запуск "Панели управления" и показывать соответствующий пункт в меню\n  :: Не показывать пункт "Справка и поддержка" в меню (для классического меню)\n:: Разрешить запуск "Панели управления" и показывать соответствующий пункт в меню\n:: Не показывать пункт "Справка и поддержка" в меню (для классического меню)\nВ
 SetNetDevCharacters.bat -- Устанавливает характеристики сетевого устройства\nUSAGE: SetNetDevCharacters.bat device_id characters_dword\nСкрипт использует вызов стандартной утилиты reg.exe\n\n:: Hide the TAP-Adapter in Network Connections:\n::   call :SetNetDevCharacters "tap0901" "0x81"\n::\n:: Show the TAP-Adapter in Network Connections:\n::   call :SetNetDevCharacters "tap0901" "0x89"\nВ
 SetNumLock.bat -- Устанавливает режим работы клавиши NumLock\nUSAGE: SetNumLock.bat on|off\nСкрипт использует вызов стандартной утилиты reg.exe\nВ
@@ -190,6 +170,7 @@ SetUACPolicy.bat -- Управляет политикой контроля доступа пользователя\nUSAGE: Se
 ShortFileNames.bat -- Включение,выключение создания коротких имён файлов на всех NTFS томах\nUSAGE: ShortFileNames.bat disable|enable\nСкрипт использует вызов системной утилиты reg.exe\nВ
 ShowInactiveUsers.bat -- Показывает неактивных пользователей системы за период [rdn [24weeks]]\nUSAGE: ShowInactiveUsers.bat [dn|rdn|upn|samid [weeks]]\nСкрипт использует вызов стандартной программы dsquery.exe\nВ
 ShowInterfaces.bat -- Показывает сетевые интерфейсы в виде таблицы\nUSAGE: ShowInterfaces.bat \nФункция использует вызов системной утилиты netsh.exe\nВ
+ShowKMS.bat -- Показывает статус лицензии KMS для Windows и/или Office\nUSAGE: ShowKMS.bat win|off|all\nСкрипт использует вызов нестандартного скрипта slmgr.vbs\nВ
 ShowLoggedUsers.bat -- Показывает залогиненых пользователей в системе\nUSAGE: ShowLoggedUsers.bat\nСкрипт использует вызов стандартной функции tasklist.exe\nВ
 ShowPrinters.bat -- Показывает принтеры, подключённые к сети (только реальные, не виртуальные принтеры)\nUSAGE: ShowPrinters.bat [real]\nСкрипт использует вызовы стандартных утилит reg.exe, find.exe и сторонней утилиты sed.exe\nВ
 ShowRunRegKeys.bat -- Показывает записи ключа «Run» системного реестра, управляющего автозапуском\nUSAGE: ShowRunRegKeys.bat\nСкрипт использует вызов стандартных утилит reg.exe и find.exe\nВ
@@ -198,7 +179,23 @@ ShowUsersProfiles.bat -- Показывает профили пользователей системы\nUSAGE: ShowUs
 SIADebugTracing.bat -- Включение и выключение отладочной трассировки Помощника подключения к онлайн сервисам Microsoft\nUSAGE: SIADebugTracing.bat disable|enable\nСкрипт использует вызов системной утилиты reg.exe\nВ
 Software.bat -- Удаление программного обеспечения из системы [показывает список установленного ПО]\nUSAGE: Software.bat [uninstall name]\nСкрипт использует вызовы различных системных программ и плотно работает с реестром\nВ
 StopReplicationOnAutoRecovery.bat -- Остановка автоматической репликации DFS после автоматического восстановления после сбоя\nUSAGE: StopReplicationOnAutoRecovery.bat disable|enable\nСкрипт использует вызов системной утилиты reg.exe и скриптов EchoSucc.bat и EchoFail.batВ
+Suspend.bat -- Перевести компьютер в режим сна\nUSAGE: Suspend.bat\nСкрипт использует вызов стандартной програмы rundll.exe\nВ
 Svc.bat -- Управление службами Windows [показывает список запущенных служб]\nUSAGE: Svc.bat [delete|disable|auto|demand|stop|start|check service_name]\nСкрипт использует вызовы системных функций sc.exe, findstr.exe и find.exe\nВ
 Svc_w32time.bat -- Регистрация и удаление службы w32time\nUSAGE: Svc_w32time.bat unregister|register\nСкрипт использует вызов системных утилит w32tm.exe и find.exe\nВ
 SyncTime.bat -- Синхронизирует время компьютера\nUSAGE: SyncTime.bat \nСкрипт использует вызов системной функции w32.tm.exe, find.exe, командных файлов EchoSucc и EchoFail\n\nВ
 SysFiles.bat -- Защищает и снимает защиту с системных файлов Misrosoft Windows\nUSAGE: SysFiles.bat protect|unprotect\nСкрипт использует вызовы системной утилиты attrib.exe и скрипта SetAccessMode.bat\nВ
+SysInfo.bat -- Выводит информацию о системе\nUSAGE: SysInfo.bat\nВ
+Task.bat -- Добавляет/удаляет/проверяет запланированные задачи Windows [Выдаёт список задач]\nUSAGE: Task.bat [delete|add|check task_name [hourly|daily|weekly|onstart task]]\nВ
+TaskBackupDHCP.bat -- Удаление/добавление задачи архивирования параметров DHCP сервера\n\nUSAGE: TaskBackupDHCP.bat delete/add [backup_path]В
+TaskBackupSystemDrive.bat -- Добавление/удаление/Проверка задачи архивации системного диска (на D:)\nUSAGE: TaskBackupSystemDrive.bat delete|add|check [backup_target]\nВ
+TaskMountExchangeDatabases.bat -- Добавление/удаление задачи монтирования баз данных Microsoft Exchange\nUSAGE: TaskMountExchangeDatabases.bat delete/add\nВ
+TestAD.bat -- Тест ActiveDirectory\nUSAGE: TestAD.bat [domain]\nВ
+ThumbCache.bat -- Включает/выключает кеш миниатюр\nUSAGE: ThumbCache.bat disable|enable\nВ
+Thumbs.bat -- Включает/выключает миниатюры (файлов просмотра рисунков и видео)\nUSAGE: Thumbs.bat disable|enable\nВ
+UnwrapMikroTikExport.bat -- Убирает переносы в файлах экспорта Microtik  [*.export *.rsc]\nUSAGE: UnwrapMikroTikExport.bat [file_names]\nВ
+USBDevOnSoftRemove.bat -- Включение/выключение USB устройства для мягкого удаления (использует реестр)\nUSAGE: USBDevOnSoftRemove.bat disable|enable\nВ
+USBStorage.bat -- Сохранение/восстановление содержимого USB носителя в файл [C:\\image.imz]\nUSAGE: USBStorage.bat [backup|restore drive [image]]\nСкрипт использует утилиту usbitcmd.exe\nВ
+UserProfileSettings.bat -- Установки профиля пользователя\nUSAGE: UserProfileSettings.bat [delete username]\nВ
+Wait.bat -- Ожидание нажатия любой клавиши (в течение определённого времени)\nUSAGE: Wait.bat [seconds]В
+WinXPx32SecurityUpdates.bat -- Включение/выключение обновлений безопасности для Windows XP\nUSAGE: WinXPx32SecurityUpdates.bat disable|enable\nВ
+WoL.bat -- Включение/выключение/проверка сервиса Wake on Lan на сетевом интерфейсе\nUSAGE: WoL.bat disable|enable|check interface_id\nВ

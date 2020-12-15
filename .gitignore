@@ -26,6 +26,8 @@ $RECYCLE.BIN/
 obj/*.*
 Scripts/obj/Debug/*.*
 Scripts/bin/Debug/*.*
+.wixpdb
+.wixobj
 # =========================
 # Custom Files
 # =========================

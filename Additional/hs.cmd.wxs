@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="48766B2C-DE7C-4B4B-AD76-A1A63D3AA613" Name="NIT.hs.cmd utils" Language="1033" Version="1.0.0.0" Manufacturer="New Internet Technologies Inc." UpgradeCode="D5972AC9-4BC0-411A-81DF-3E35A17AD2AD">
+        <Package Description="hs.cmd utils" Comments="hs.cmd utils" InstallerVersion="200" Compressed="yes" />
+        <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
+        <WixVariable Id="WixUILicenseRtf" Value="..\license.rtf" />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="INSTALLFOLDER" Name="Util">
+                <Component Id="HS_BEEP.EXE" DiskId="1" Guid="78BABE59-37AE-48B8-9770-DE5314FAFA49">
+                    <File Id="HS_BEEP.EXE" Name="hs_beep.exe" Source="HS\hs_beep.exe" />
+                </Component>
+                <Component Id="HS_COLOR.EXE" DiskId="1" Guid="5BA2049B-BC73-4598-9A70-C30BB6785927">
+                    <File Id="HS_COLOR.EXE" Name="hs_color.exe" Source="HS\hs_color.exe" />
+                </Component>
+                <Component Id="HS_DELAY.EXE" DiskId="1" Guid="FD137029-6AED-47D9-818E-040EE4523259">
+                    <File Id="HS_DELAY.EXE" Name="hs_delay.exe" Source="HS\hs_delay.exe" />
+                </Component>
+                <Component Id="HS_ECHO.EXE" DiskId="1" Guid="AD35F2D7-FE89-4666-89A3-1205BFB4C6FB">
+                    <File Id="HS_ECHO.EXE" Name="hs_echo.exe" Source="HS\hs_echo.exe" />
+                </Component>
+                <Component Id="HS_EXEC.EXE" DiskId="1" Guid="3B6A2D1D-1773-42A8-AFC0-A27AD9FEB46F">
+                    <File Id="HS_EXEC.EXE" Name="hs_exec.exe" Source="HS\hs_exec.exe" />
+                </Component>
+                <Component Id="HS_HELP.CMD" DiskId="1" Guid="A78D4BFB-DFB9-4EC0-8309-BC60E3AEF713">
+                    <File Id="HS_HELP.CMD" Name="hs_help.cmd" Source="HS\hs_help.cmd" />
+                </Component>
+                <Component Id="HS_MESSAGE.EXE" DiskId="1" Guid="A6EBF72A-5AFA-4D5A-9C38-1939FF469D2E">
+                    <File Id="HS_MESSAGE.EXE" Name="hs_message.exe" Source="HS\hs_message.exe" />
+                </Component>
+                <Component Id="HS_PLAY.EXE" DiskId="1" Guid="897A4093-4F30-4869-8E72-1A658747BD51">
+                    <File Id="HS_PLAY.EXE" Name="hs_play.exe" Source="HS\hs_play.exe" />
+                </Component>
+                <Component Id="HS_POS.EXE" DiskId="1" Guid="AD847192-E409-4351-8781-438946C0BEFA">
+                    <File Id="HS_POS.EXE" Name="hs_pos.exe" Source="HS\hs_pos.exe" />
+                </Component>
+                <Component Id="HS_READKEY.EXE" DiskId="1" Guid="2991D522-C8A2-41AB-BFA1-0C61966E7B57">
+                    <File Id="HS_READKEY.EXE" Name="hs_readkey.exe" Source="HS\hs_readkey.exe" />
+                </Component>
+                <Component Id="HS_WINDOW.EXE" DiskId="1" Guid="DF663ECB-5F55-4D9C-AA07-A0CFBFA4232A">
+                    <File Id="HS_WINDOW.EXE" Name="hs_window.exe" Source="HS\hs_window.exe" />
+                </Component>
+            </Directory>
+        </Directory>
+        <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
+            <ComponentRef Id="HS_BEEP.EXE" />
+            <ComponentRef Id="HS_COLOR.EXE" />
+            <ComponentRef Id="HS_DELAY.EXE" />
+            <ComponentRef Id="HS_ECHO.EXE" />
+            <ComponentRef Id="HS_EXEC.EXE" />
+            <ComponentRef Id="HS_HELP.CMD" />
+            <ComponentRef Id="HS_MESSAGE.EXE" />
+            <ComponentRef Id="HS_PLAY.EXE" />
+            <ComponentRef Id="HS_POS.EXE" />
+            <ComponentRef Id="HS_READKEY.EXE" />
+            <ComponentRef Id="HS_WINDOW.EXE" />
+        </Feature>
+        <UI />
+        <UIRef Id="WixUI_InstallDir" />
+        <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+        <Property Id="ROOTDRIVE" Value="C:\" />
+    </Product>
+</Wix>
