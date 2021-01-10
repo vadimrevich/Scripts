@@ -16,7 +16,7 @@
 
 - Клонируйте в него указанный репозиторий командой
 
-    `git clone http://github.com/yudenisov/Scripts ???`
+    `git clone http://github.com/VadimRevich/Scripts ???`
 
 или просто разархивируйте туда архив, скаченный с GitHub
 

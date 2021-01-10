@@ -1,6 +1,6 @@
 # Modified BSD Licence
 
-### Copyright (c) 2019, yudenisov All rights reserved.
+### Copyright (c) 2019, VadimRevich All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -29,7 +29,7 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-### Copyright (c) 2019, yudenisov
+### Copyright (c) 2019, VadimRevich
 
 Разрешается повторное распространение и использование как в виде
 исходного кода, так и в двоичной форме, с изменениями или без, при
@@ -44,7 +44,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     последующий отказ от гарантий в документации и/или в других
     материалах, поставляемых при распространении.
 
-3.  Ни название yudenisov, ни имена ее сотрудников не могут быть
+3.  Ни название VadimRevich, ни имена ее сотрудников не могут быть
     использованы в качестве поддержки или продвижения продуктов,
     основанных на этом ПО без предварительного письменного разрешения.
 
